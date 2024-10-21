@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "82196279594",
+    "firebase_url": "https://myadmi-b9255-default-rtdb.firebaseio.com",
+    "project_id": "myadmi-b9255",
+    "storage_bucket": "myadmi-b9255.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82196279594:android:1ebe1086fc837376dd6e53",
+        "android_client_info": {
+          "package_name": "com.example.myadmi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWzqaAbNZ1QZ5gRxa4n1h49_lJYl0JUqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
