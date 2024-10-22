@@ -1,5 +1,6 @@
 package com.example.myadmi
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -7,6 +8,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -59,10 +63,12 @@ fun MainScreen(viewModel: ColorViewModel = androidx.lifecycle.viewmodel.compose.
             }
         )
 
-        LazyColumn(
+        LazyVerticalGrid(
+            columns = GridCells.Fixed(2),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
             modifier = Modifier
                 .weight(1f)
-                .fillMaxWidth()
                 .padding(16.dp)
         ) {
             items(colors) { colorEntry ->
@@ -76,7 +82,7 @@ fun MainScreen(viewModel: ColorViewModel = androidx.lifecycle.viewmodel.compose.
                 .fillMaxWidth()
                 .padding(16.dp)
         ) {
-            Text("Add Random Color")
+            Text("Add Color +")
         }
     }
 }
@@ -107,7 +113,7 @@ fun ColorItem(colorEntry: ColorEntry) {
             )
             Spacer(modifier = Modifier.height(4.dp))
             Text(
-                text = "Created at ${SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date(colorEntry.time))}",
+                text = "Created at ${SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date(colorEntry.time))}",
                 style = MaterialTheme.typography.bodyMedium,
                 color = Color.White
             )
