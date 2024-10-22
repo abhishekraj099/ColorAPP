@@ -1,4 +1,4 @@
-package com.example.myadmi
+package com.example.myadmi.data.dataclass
 
 
 data class ColorEntry(

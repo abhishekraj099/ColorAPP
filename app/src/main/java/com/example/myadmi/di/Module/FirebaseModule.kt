@@ -1,4 +1,4 @@
-package com.example.myadmi
+package com.example.myadmi.di.Module
 
 import com.google.firebase.database.FirebaseDatabase
 import dagger.Module

@@ -1,7 +1,8 @@
-package com.example.myadmi
+package com.example.myadmi.di.Module
 
 import android.content.Context
 import androidx.room.Room
+import com.example.myadmi.data.database.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
