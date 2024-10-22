@@ -66,6 +66,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.firebase.firestore)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -109,8 +110,6 @@ dependencies {
     implementation ("androidx.compose.material3:material3:1.1.0")
     implementation ("com.google.accompanist:accompanist-swiperefresh:0.30.1")
 
-//    implementation ("com.google.firebase:firebase-database-ktx:20.0.0")
-//    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.5.0")
 
     implementation ("androidx.compose.animation:animation:1.0.5")
 }
